@@ -2,17 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConsumableClass : MonoBehaviour
+[CreateAssetMenu(fileName = "New Tool Class", menuName = "Item/Consumable")]
+public class ConsumableClass : ItemClass
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("Consumable")]
+    public float healthAdded;
+    public override ConsumableClass GetConsumable()
     {
-        
+        return this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override ItemClass GetItem()
     {
-        
+        return this;
+    }
+
+    public override MiscClass GetMisc()
+    {
+        return null;
+    }
+
+    public override ToolClass GetTool()
+    {
+        return null;
     }
 }

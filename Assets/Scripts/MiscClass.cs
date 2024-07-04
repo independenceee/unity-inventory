@@ -2,17 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MiscClass : MonoBehaviour
+[CreateAssetMenu(fileName = "New Tool Class", menuName = "Item/Mics")]
+public class MiscClass : ItemClass
 {
-    // Start is called before the first frame update
-    void Start()
+    public override ConsumableClass GetConsumable()
     {
-        
+        return null;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override ItemClass GetItem()
     {
-        
+        return this;
+    }
+
+    public override MiscClass GetMisc()
+    {
+        return this;
+    }
+
+    public override ToolClass GetTool()
+    {
+        return null;
     }
 }
