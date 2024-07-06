@@ -18,6 +18,7 @@ public class InventoryManager : MonoBehaviour
         {
             slots[index] = slotHolder.transform.GetChild(index).gameObject;
         }
+
         RefreshUI();
 
     }
@@ -30,6 +31,7 @@ public class InventoryManager : MonoBehaviour
             {
                 slots[index].transform.GetChild(0).GetComponent<Image>().enabled = true;
                 slots[index].transform.GetChild(0).GetComponent<Image>().sprite = items[index].GetItem().itemIcon;
+                Debug.Log(slots[index].transform.GetChild(1).GetComponent<Text>());
                 if (items[index].GetItem().isStackable)
                 {
                     slots[index].transform.GetChild(1).GetComponent<Text>().text = items[index].GetQuantity().ToString();
@@ -43,7 +45,7 @@ public class InventoryManager : MonoBehaviour
             {
                 slots[index].transform.GetChild(0).GetComponent<Image>().sprite = null;
                 slots[index].transform.GetChild(0).GetComponent<Image>().enabled = false;
-                // slots[index].transform.GetChild(1).GetComponent<Text>().text = "";
+                slots[index].transform.GetChild(1).GetComponent<Text>().text = "";
             }
         }
     }
