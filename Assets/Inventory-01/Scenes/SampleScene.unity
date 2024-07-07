@@ -688,8 +688,8 @@ MonoBehaviour:
   itemToRemove: {fileID: 11400000, guid: 6f64367ebadfbc24b822365e08a1ccfe, type: 2}
   items:
   - item: {fileID: 11400000, guid: 58c0f79d6dd443945b7685b96980570f, type: 2}
-    quantity: 1
-  - item: {fileID: 11400000, guid: 58c0f79d6dd443945b7685b96980570f, type: 2}
+    quantity: 10
+  - item: {fileID: 11400000, guid: 6f64367ebadfbc24b822365e08a1ccfe, type: 2}
     quantity: 10
 --- !u!1 &410087039
 GameObject:

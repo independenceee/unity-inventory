@@ -40,4 +40,10 @@ public class SlotClass
     {
         quantity -= _quantity;
     }
+
+    public void AddItem(ItemClass item, int quantity)
+    {
+        this.item = item;
+        this.quantity = quantity;
+    }
 }
