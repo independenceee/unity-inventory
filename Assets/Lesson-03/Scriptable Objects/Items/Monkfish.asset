@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96493d1a3782fb54a914df78df0a0402, type: 3}
+  m_Name: Monkfish
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8215484195822574178, guid: 416adac55f0879143946112a300c9dd0, type: 3}
+  itemType: 0
+  description: 
+  restoreHealthValue: 0
