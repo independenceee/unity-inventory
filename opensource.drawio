@@ -1,9 +1,44 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.7.14">
   <diagram name="Page-1" id="2dGGcqA2xCVTAOPpcNz4">
-    <mxGraphModel>
+    <mxGraphModel dx="1843" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="flTwvml4sMELpj5LfBXa-11" value="Develop updates&lt;div&gt;Codebase&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flTwvml4sMELpj5LfBXa-12" value="Webpack (HMR + Fast Refresh)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flTwvml4sMELpj5LfBXa-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="flTwvml4sMELpj5LfBXa-11" target="flTwvml4sMELpj5LfBXa-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="290" as="sourcePoint" />
+            <mxPoint x="590" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flTwvml4sMELpj5LfBXa-15" value="Thay đổi mã nguồn" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="flTwvml4sMELpj5LfBXa-14">
+          <mxGeometry x="-0.1043" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flTwvml4sMELpj5LfBXa-16" value="Biên dịch lại các Module thay đổi" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flTwvml4sMELpj5LfBXa-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="flTwvml4sMELpj5LfBXa-17" target="flTwvml4sMELpj5LfBXa-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flTwvml4sMELpj5LfBXa-17" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Fast refresh&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;- Kiếm tra lại thay đổi lớn&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;- Nếu có giữ trạng thái: chỉ render lại component&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;- Nếu không: thực hiện full reload component để tránh lỗi&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="400" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="flTwvml4sMELpj5LfBXa-18" value="&lt;div style=&quot;text-align: justify;&quot;&gt;Trình duyệt&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;-Thay thế module trực tiếp trong bộ nhớ&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;- Render lại giao diện nếu cần thiết&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="560" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="flTwvml4sMELpj5LfBXa-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="flTwvml4sMELpj5LfBXa-16" target="flTwvml4sMELpj5LfBXa-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="520" as="sourcePoint" />
+            <mxPoint x="440" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
